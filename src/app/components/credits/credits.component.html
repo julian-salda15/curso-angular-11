@@ -1,0 +1,29 @@
+<h2 class="m-auto">Creditos</h2>
+
+<div class="card" *ngFor="let item of credits">
+    <div class="row">
+        <div class="col-6">
+            <div>
+                <p for="">Credito: <span>{{item.id}}</span></p>
+            </div>
+            <div>
+                <p for="">Nombre:  <span>{{item.person.firstName + ' ' + item.person.lastName}}</span></p>
+            </div>
+            <div>
+                <b>{{item.value | currency:'$':'symbol':'3.0'}}</b>
+            </div>
+        </div>
+        <div class="col-6">
+            <div>
+                Saldo a favor
+                <div>
+                    {{item.value | currency:'$':'symbol':'3.0'}}
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr class="border">
+    <app-payments [payments]="item.payments" (notify)="notify = $event"></app-payments>
+</div>
+
+<app-notify *ngIf="notify" (close)="notify = $event"></app-notify>

@@ -1,0 +1,25 @@
+<div class="p-container">
+    <b class="m-auto">Pagos</b>
+    <div class="row">
+        <div class="col-6">
+            Fecha
+        </div>
+        <div class="col-6">
+            Valor
+        </div>
+    </div>
+    <hr class="border">
+    <div *ngFor="let item of payments; last as last; even as even" class="{{ !even ? 'row--background' : ''}}">
+        <div class="row">
+            <div class="col-6">
+                {{item.date | date: 'dd/MM/yyyy'}}
+            </div>
+            <div class="col-6">
+               <a class="p-link" (click)="open()"> {{item.value | currency:'$':'symbol':'4.0-2'}} </a> 
+               <!-- <span class="p-state">(Anulado)</span> -->
+            </div>
+        </div>
+
+        <!-- <hr class="border" *ngIf="!last"> -->
+    </div>
+</div>

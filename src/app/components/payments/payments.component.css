@@ -1,0 +1,19 @@
+.p-container {
+    font-size: 13px;
+}
+.p-link {
+    cursor: pointer;
+}
+
+.p-state {
+    color: red;
+}
+
+.row--background{
+    background: rgb(208 231 234);
+}
+
+.border {
+    margin: 0;
+    border-color: #00bcd4;
+}

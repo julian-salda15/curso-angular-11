@@ -1,0 +1,21 @@
+.n-container{
+    position: fixed;
+    width: 100%;
+    background: rgba(208, 231, 234, 0.4);
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.n-card {
+    width: 200px;
+    min-height: 250px;
+}
+
+.n-btn {
+    position: absolute;
+    right: 12px;
+}

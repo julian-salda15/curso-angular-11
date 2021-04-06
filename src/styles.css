@@ -1,1 +1,42 @@
 /* You can add global styles to this file, and also import other style files */
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: rgb(208 231 234);
+    font-size: 15px;
+}
+.container {
+    padding: 1% 25%;
+}
+
+.card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 4px 5px 21px -7px grey;
+    padding: 10px 31px;
+    margin: 15px 0px;
+    position: relative;
+}
+
+.col-6 {
+    width: 50%;
+    padding: 5px 10px;
+    display: block;
+}
+
+.row {
+    display: flex;
+    width: 100%;
+}
+
+.m-auto {
+    margin: 0 auto;
+}
+
+.btn, .btn:focus, .btn:hover, .btn:active {
+    box-shadow: none;
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+    outline: none;
+}
